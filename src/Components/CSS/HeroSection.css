@@ -1,0 +1,100 @@
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainBackround);
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: 50%; /* Adjust this value to position the circle vertically */
+    left: 90%; /* Adjust this value to position the circle horizontally */
+    width: 1000px; /* Adjust the size of the circle */
+    height: 1000px; /* Adjust the size of the circle */
+    background-color: var(--diffrentShade); /* Change the color of the circle */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    /* Add any other styles you want for the circle, such as box-shadow, etc. */
+}
+
+.linkedin-link {
+    text-decoration: none;
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-between;
+}
+
+#text {
+    width: 60%;
+    z-index: 11;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy) {
+    opacity: 0.2;
+    transition: opacity 350ms ease;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.word {
+    color: var(--textColor);
+    font-size: 5vw;
+    margin: 0;
+    text-transform: uppercase;
+}
+.word-space {
+    margin-right: 17vw;
+}
+
+.fancy > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+.fancy:hover > .letter {
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(-20deg);
+}
+.fancy:hover > .letter:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(20deg);
+}
+.fancy:hover > .letter:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-20deg);
+}
+/* .fancy > .letter:nth-child(4){
+    transform: translate(0%, 0%) rotate(-20deg);
+} */
+.fancy:hover > .letter:nth-child(5) {
+    transform: translate(-20%, 20%) rotate(-5deg);
+}
+.fancy:hover > .letter:nth-child(6) {
+    transform: translate(0%, -40%) rotate(-5deg);
+}
+.fancy:hover > .letter:nth-child(7) {
+    transform: translate(0%, 15%) rotate(10deg);
+}
+.fancy:hover > .letter:nth-child(8) {
+    transform: translate(0%, -50%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(9) {
+    transform: translate(0%, 15%) rotate(-6deg);
+}
+.fancy:hover > .letter:nth-child(10) {
+    transform: translate(-5%, -10%) rotate(-9deg);
+}
+.fancy:hover > .letter:nth-child(11) {
+    transform: translate(12%, -30%) rotate(20deg);
+}
+.fancy:hover > .letter:nth-child(12) {
+    transform: translate(-50%, 30%) rotate(-30deg);
+}
+.fancy:hover > .letter:nth-child(13) {
+    transform: translate(20%, -10%) rotate(30deg);
+}

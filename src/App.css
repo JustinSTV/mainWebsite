@@ -1,0 +1,22 @@
+:root{
+    --navbarBackround: #1e1f22;
+    --navbarLinkBackground: #3f363f;
+    --navbarHover: #3ba55d;
+    --accentColor: #3ba55d;
+    --textColor: #ffffff;
+    --mainBackround: #1e1f22;
+    --outline: #36393f;
+    --diffrentShade: #303136;
+    --card: rgba(30, 31, 34, 0.7);
+    --diffrentCard: #303136;
+    scroll-behavior: smooth;
+}
+
+.main-content{
+    padding-left: 100px;
+}
+
+.big-heading{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
