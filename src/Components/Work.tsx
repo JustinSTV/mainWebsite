@@ -27,14 +27,14 @@ const Work = () => {
       description: "This website was created to showcase my skills and projects.",
       technologies: ["React", "TypeScript", "Vite", "CSS"],
       github: "https://github.com/JustinSTV/mainWebsite",
-      live: "https://google.com",
+      live: "https://justassteponavicius.vercel.app/",
     },
     {
       title: "Menu Project",
       description: "School project where we had to create a menu for a restaurant.",
       technologies: ["Vanilla JavaScript", "HTML", "CSS"],
-      github: "https://github.com",
-      live: "https://google.com",
+      github: "https://github.com/JustinSTV/Meniu-project",
+      live: "https://meniu-project.vercel.app/",
     }
 
   ]

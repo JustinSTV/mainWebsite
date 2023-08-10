@@ -44,12 +44,12 @@ const Navbar = () => {
         </a>
         <a
           href='#'
-          title='Work'
-          onMouseEnter={() => handleLinkHover('Work')}
+          title='Projects'
+          onMouseEnter={() => handleLinkHover('Projects')}
           onMouseLeave={() => handleLinkHover('')}
         >
           <i className="fa-solid fa-code"></i>
-          {hoveredLink === 'Work' && <div className="link-title">Work</div>}
+          {hoveredLink === 'Projects' && <div className="link-title">Projects</div>}
         </a>
         <a
           href='#'
