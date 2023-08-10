@@ -1,4 +1,3 @@
-import React from "react"
 import "./CSS/AboutMe.css"
 
 const AboutMe = () => {

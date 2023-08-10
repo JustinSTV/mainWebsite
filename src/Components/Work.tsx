@@ -1,4 +1,3 @@
-import React from 'react'
 import "./CSS/Work.css"
 
 const Work = () => {
@@ -27,7 +26,7 @@ const Work = () => {
       title: "Portfolio Website",
       description: "This website was created to showcase my skills and projects.",
       technologies: ["React", "TypeScript", "Vite", "CSS"],
-      github: "https://github.com",
+      github: "https://github.com/JustinSTV/mainWebsite",
       live: "https://google.com",
     },
     {
