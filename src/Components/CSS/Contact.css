@@ -31,7 +31,7 @@ form{
   color: var(--accentColor);
   padding: 0 10px;
   pointer-events: none;
-  transition: 0.3s ease-out;
+  transition: 0.3s ease-out, top 0.3s ease-out;
 }
 
 .input-shrink {
@@ -67,7 +67,7 @@ form{
 
 
 .input-group input:focus + .input-label,
-.input-group textarea:focus + .input-label {
+.input-group textarea:focus + .input-label{
   top: -10px;
   font-size: 20px;
   padding: 0 5px;
@@ -76,6 +76,21 @@ form{
   border-left: 2px solid white;
   border-right: 2px solid white;
 }
+
+.input-group input:not(:placeholder-shown) + .input-label,
+.input-group textarea:not(:placeholder-shown) + .input-label {
+  top: -10px;
+  font-size: 14px;
+  padding: 0 5px;
+  color: var(--textColor);
+  background-color: var(--mainBackround);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: transparent;
+}
+
 
 
 .submit-button {

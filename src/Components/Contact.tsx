@@ -5,7 +5,7 @@ const Contact = () => {
   const [title, setTitle] = useState("")
   const [message, setMessage] = useState("")
 
-  const handleSubmit = (e :any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     console.log(title, message)
 
@@ -21,6 +21,7 @@ const Contact = () => {
       <form onSubmit={handleSubmit}>
         <div className='input-group'>
           <input
+            placeholder='Title'
             type='text'
             required
             value={title}
@@ -32,6 +33,7 @@ const Contact = () => {
         </div>
         <div className='input-group'>
           <textarea
+            placeholder='Message'
             required
             value={message}
             onChange={(e) => setMessage(e.target.value)}
