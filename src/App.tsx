@@ -4,6 +4,8 @@ import HeroSection from './Components/HeroSection'
 import Navbar from './Components/Navbar'
 import Skills from './Components/Skills'
 import Work from './Components/Work'
+import Contact from './Components/Contact'
+// import Footer from './Components/Footer'
 
 function App() {
   return(
@@ -16,6 +18,8 @@ function App() {
         <AboutMe />
         <Skills />
         <Work />
+        <Contact />
+        {/* <Footer /> */}
       </div>
     </div>
   )

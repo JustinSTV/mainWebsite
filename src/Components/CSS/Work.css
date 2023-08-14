@@ -46,7 +46,8 @@
 
 .one-project-button {
     padding: 10px 20px;
-    background-color: var(--accentColor);
+    background: none;
+    outline: var(--accentColor) solid 2px;
     color: var(--textColor);
     border-radius: 5px;
     border: none;
@@ -56,5 +57,6 @@
 }
 
 .one-project-button:hover {
-    background-color: var(--accentColorHover);
+    background-color: var(--accentColor);
+    color: black;
 }
