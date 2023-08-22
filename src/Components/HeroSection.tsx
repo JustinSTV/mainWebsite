@@ -1,5 +1,6 @@
 import React from 'react'
 import './CSS/HeroSection.css'
+import { AiOutlineEnter } from 'react-icons/ai'
 
 const HeroSection = () => {
   const word = 'Web Developer'
@@ -35,9 +36,13 @@ const HeroSection = () => {
             </React.Fragment>
           ))}
           </a>
-          
+          <div className="hover-container">
+            <p>Click me</p>
+            <AiOutlineEnter />
+          </div>
         </div>
       </div>
+      
     </div>
     
   )

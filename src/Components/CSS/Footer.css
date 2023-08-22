@@ -1,0 +1,39 @@
+.footer-section {
+  background-color: var(--diffrentShade);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links svg {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-links a {
+  color: var(--textColor);
+  transition: all 150ms ease-out;
+}
+
+.footer-links a:hover {
+  cursor: pointer;
+  color: var(--accentColor);
+}
+
+.footer-links a:active {
+  transform: scale(0.9);
+}
+
+.copyright{
+  color: var(--textColor);
+  margin-top: 20px;
+  opacity: 0.5;
+}

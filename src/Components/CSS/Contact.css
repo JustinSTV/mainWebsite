@@ -96,9 +96,9 @@ form{
 .submit-button {
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid var(--accentColor);
-  border-radius: 10px;
+  border-radius: 5px;
   background: none;
   color: var(--textColor);
   cursor: pointer;
@@ -107,5 +107,5 @@ form{
 
 .submit-button:hover {
   background: var(--accentColor);
-  color: var(--mainBackround);
+  color: white;
 }

@@ -37,11 +37,15 @@
     margin-bottom: 10px;
 }
 
+.project-tech{
+    opacity: 0.5;
+}
+
 .project-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .one-project-button {
@@ -58,5 +62,5 @@
 
 .one-project-button:hover {
     background-color: var(--accentColor);
-    color: black;
+    color: white;
 }

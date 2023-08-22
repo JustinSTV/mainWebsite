@@ -7,6 +7,7 @@ const Navbar = () => {
   const handleLinkHover = (title:string) => {
     setHoveredLink(title);
   };
+  
 
   return (
     <nav className='navbar'>

@@ -7,16 +7,38 @@
     position: relative;
 }
 
-.circle {
+.hover-container{
     position: absolute;
-    top: 50%; /* Adjust this value to position the circle vertically */
-    left: 90%; /* Adjust this value to position the circle horizontally */
-    width: 1000px; /* Adjust the size of the circle */
-    height: 1000px; /* Adjust the size of the circle */
-    background-color: var(--diffrentShade); /* Change the color of the circle */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    /* Add any other styles you want for the circle, such as box-shadow, etc. */
+    left: 13%;
+    bottom: 12%;
+    width: 10%;
+    height: 15%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-40deg);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hover-container svg{
+    color: var(--textColor);
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+}
+
+.hover-container p{
+    color: var(--textColor);
+    font-size: 1vw;
+    text-align: center;
+}
+
+.fancy:hover ~ .hover-container{
+    opacity: 0;
+    transition: opacity 350ms ease-in-out;
 }
 
 .linkedin-link {
