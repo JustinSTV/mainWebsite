@@ -8,7 +8,7 @@ const HeroSection = () => {
 
 
   return (
-    <div className="hero-section">
+    <div className="hero-section" id='hero-section'>
       {/* <div className="circle"></div> */}
       <div id="text">
         <div className='line'>

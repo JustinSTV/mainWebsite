@@ -4,7 +4,7 @@ const AboutMe = () => {
 
 
   return (
-    <div className="about-me-section">
+    <div className="about-me-section" id="about-section">
       <h1 className="big-heading">About Me</h1>
       <div className="about-me-content">
         <div className="photo">

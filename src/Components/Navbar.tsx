@@ -1,13 +1,14 @@
-import {useState} from 'react';
+import { useState } from 'react';
+import { Link } from 'react-scroll';
 import './CSS/Navbar.css';
 
 const Navbar = () => {
   const [hoveredLink, setHoveredLink] = useState('');
 
-  const handleLinkHover = (title:string) => {
+  const handleLinkHover = (title: string) => {
+    console.log("hovered title:", title);
     setHoveredLink(title);
   };
-  
 
   return (
     <nav className='navbar'>
@@ -16,51 +17,66 @@ const Navbar = () => {
       </div>
       <hr />
       <div className='nav-links'>
-        <a
-          href='#'
-          title='Home'
+        <Link
+          to='hero-section'
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={0}
           onMouseEnter={() => handleLinkHover('Home')}
           onMouseLeave={() => handleLinkHover('')}
         >
           <i className="fa-solid fa-house"></i>
           {hoveredLink === 'Home' && <div className="link-title">Home</div>}
-        </a>
-        <a
-          href='#'
-          title='About'
+        </Link>
+        <Link
+          to='about-section'
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={0}
           onMouseEnter={() => handleLinkHover('About')}
           onMouseLeave={() => handleLinkHover('')}
         >
           <i className="fa-solid fa-user"></i>
           {hoveredLink === 'About' && <div className="link-title">About</div>}
-        </a>
-        <a
-          href='#'
-          title='Skills'
+        </Link>
+        <Link
+          to='skill-section'
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={0}
           onMouseEnter={() => handleLinkHover('Skills')}
           onMouseLeave={() => handleLinkHover('')}
         >
           <i className="fa-solid fa-tools"></i>
           {hoveredLink === 'Skills' && <div className="link-title">Skills</div>}
-        </a>
-        <a
-          href='#'
-          title='Projects'
+        </Link>
+        <Link
+          to='work-section'
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={0}
           onMouseEnter={() => handleLinkHover('Projects')}
           onMouseLeave={() => handleLinkHover('')}
         >
           <i className="fa-solid fa-code"></i>
           {hoveredLink === 'Projects' && <div className="link-title">Projects</div>}
-        </a>
-        <a
-          href='#'
-          title='Contact'
+        </Link>
+        <Link
+          to='contact-section'
+          spy={true}
+          smooth={true}
+          offset={20}
+          duration={0}
           onMouseEnter={() => handleLinkHover('Contact')}
           onMouseLeave={() => handleLinkHover('')}
         >
           <i className="fa-solid fa-address-book"></i>
           {hoveredLink === 'Contact' && <div className="link-title">Contact</div>}
-        </a>
+        </Link>
       </div>
     </nav>
   );
