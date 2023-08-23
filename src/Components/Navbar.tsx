@@ -17,7 +17,7 @@ const Navbar = () => {
       <hr />
       <div className='nav-links'>
         <Link
-          to='hero-section'
+          to='hero'
           spy={true}
           smooth={true}
           offset={-50}
@@ -29,10 +29,10 @@ const Navbar = () => {
           {hoveredLink === 'Home' && <div className="link-title">Home</div>}
         </Link>
         <Link
-          to='about-section'
+          to='about'
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={0}
           duration={0}
           onMouseEnter={() => handleLinkHover('About')}
           onMouseLeave={() => handleLinkHover('')}
@@ -41,10 +41,10 @@ const Navbar = () => {
           {hoveredLink === 'About' && <div className="link-title">About</div>}
         </Link>
         <Link
-          to='skill-section'
+          to='skill'
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-100}
           duration={0}
           onMouseEnter={() => handleLinkHover('Skills')}
           onMouseLeave={() => handleLinkHover('')}
@@ -53,10 +53,10 @@ const Navbar = () => {
           {hoveredLink === 'Skills' && <div className="link-title">Skills</div>}
         </Link>
         <Link
-          to='work-section'
+          to='projects'
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={0}
           duration={0}
           onMouseEnter={() => handleLinkHover('Projects')}
           onMouseLeave={() => handleLinkHover('')}
@@ -65,10 +65,10 @@ const Navbar = () => {
           {hoveredLink === 'Projects' && <div className="link-title">Projects</div>}
         </Link>
         <Link
-          to='contact-section'
+          to='contact'
           spy={true}
           smooth={true}
-          offset={20}
+          offset={0}
           duration={0}
           onMouseEnter={() => handleLinkHover('Contact')}
           onMouseLeave={() => handleLinkHover('')}

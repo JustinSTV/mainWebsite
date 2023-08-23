@@ -34,8 +34,7 @@ nav hr {
     background: #36393f;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover{
     border-radius: 25%;
     background: #3ba55d;
 }

@@ -41,7 +41,7 @@ const Work = () => {
 
 
   return (
-    <div className='work-section' id="work-section">
+    <div className='work-section' id="projects">
       <h1 className="big-heading">Projects</h1>
       <div className="project-cards">
         {/* nuo cia vienas cardas */}
