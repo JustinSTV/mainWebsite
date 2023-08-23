@@ -6,7 +6,6 @@ const Navbar = () => {
   const [hoveredLink, setHoveredLink] = useState('');
 
   const handleLinkHover = (title: string) => {
-    console.log("hovered title:", title);
     setHoveredLink(title);
   };
 

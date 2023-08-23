@@ -20,7 +20,7 @@
 
 .footer-links a {
   color: var(--textColor);
-  transition: all 150ms ease-out;
+  transition: color 150ms ease-out, transform 150ms ease-out;
 }
 
 .footer-links a:hover {
