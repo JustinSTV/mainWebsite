@@ -64,3 +64,26 @@
     background-color: var(--accentColor);
     color: white;
 }
+
+
+@media (max-width: 768px) {
+  .work-section {
+    height: auto;
+  }
+}
+  
+@media (min-width: 768px) {
+    .work-section {
+      padding: 50px;
+    }
+  
+    .project-cards {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .one-project-card {
+      width: 400px;
+      margin-bottom: 30px;
+    }
+  }

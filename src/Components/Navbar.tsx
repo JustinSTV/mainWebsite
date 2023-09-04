@@ -3,19 +3,24 @@ import { Link } from 'react-scroll';
 import './CSS/Navbar.css';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const [hoveredLink, setHoveredLink] = useState('');
 
   const handleLinkHover = (title: string) => {
     setHoveredLink(title);
   };
 
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${showMenu ? 'show' : ''}`}>
       <div className='logo'>
         <h4>Logo</h4>
       </div>
       <hr />
-      <div className='nav-links'>
+      <div className={`nav-links ${showMenu ? 'show' : ''}`}>
         <Link
           to='hero'
           spy={true}
@@ -76,6 +81,9 @@ const Navbar = () => {
           <i className="fa-solid fa-address-book"></i>
           {hoveredLink === 'Contact' && <div className="link-title">Contact</div>}
         </Link>
+      </div>
+      <div className='hamburger-menu' onClick={toggleMenu}>
+        <i className={`fa ${showMenu ? 'fa-times' : 'fa-bars'}`}></i>
       </div>
     </nav>
   );

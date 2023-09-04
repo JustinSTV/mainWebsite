@@ -41,3 +41,15 @@ svg {
     font-size: 16px;
     color: var(--textColor);
 }
+
+@media (max-width: 768px){
+    .skill-section{
+        height: auto;
+    }
+
+    .skill-cards{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -21,3 +21,19 @@
     font-size: 50px;
     margin-bottom: 50px;
 }
+
+
+@media (max-width: 768px){
+    .main-content{
+        padding-left: 0px;
+    }
+    .big-heading{
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px){
+    .big-heading{
+        margin-bottom: 50px;
+    }
+}

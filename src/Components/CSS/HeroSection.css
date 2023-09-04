@@ -120,3 +120,16 @@
 .fancy:hover > .letter:nth-child(13) {
     transform: translate(20%, -10%) rotate(30deg);
 }
+
+
+@media (max-width: 768px){
+    .hover-container{
+        display: none;
+    }
+    .fancy{
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) {
+}

@@ -37,3 +37,20 @@
   margin-top: 20px;
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .footer-links a {
+    margin: 10px 0;
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .footer-links a {
+    margin: 0;
+  }
+}

@@ -109,3 +109,28 @@ form{
   background: var(--accentColor);
   color: white;
 }
+
+
+/* Mobile-first responsive design */
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+  .contact-me-section {
+    height: auto;
+  }
+
+  .input-group {
+    width: 90%;
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .contact-me-section {
+    padding: 50px;
+  }
+
+  .input-group {
+    width: 50%;
+  }
+}
