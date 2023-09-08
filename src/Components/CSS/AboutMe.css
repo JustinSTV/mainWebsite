@@ -36,9 +36,9 @@
 
 .about-me-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
     /* outline: yellow 2px solid; */
 }
@@ -144,7 +144,6 @@ label {
         margin: 20px;
     }
 
-
     .my-role {
         font-size: 18px;
     }
@@ -156,12 +155,18 @@ label {
     .about-me-content {
         margin-top: 0;
         display: flex;
+        flex-direction: column;
         gap: 100px;
     }
 
     .about-me-description,
     .card {
         text-align: center;
+        width: 85%;
+    }
+
+    span {
+        display: block;
     }
 
     .grid-section {
